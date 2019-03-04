@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script>
+    // for (var i = ""; i.length <= 10; i += "*"){
+    //     console.log(i);
+    // }
+
+
+    // LOOPS - Exercise 1 
+    // In the codepen above, make the loop start at 30, and count down to 0.
+
+    // var counter = 30;
+
+    // while (counter >= 0) {
+    //   console.log(counter);
+    //   counter -= 1;
+    // }
+
+    //------------
+
+    // LOOPS - Exercise 2
+    //Using a for loop, display a countdown from 10 to 0. You will need to write i-- in your for loop.
+
+    // for (var i = 10; i >= 0; i--) {
+    //   console.log(i)
+    // }
+    // console.log("boom!")
+
+
+    // for (var i = 1; i <= 30; i++) {
+    //   if (i % 3 === 0) {
+    //     continue;
+    //   }
+    //   console.log(i);
+    // }
+
+
+    // LOOPS - Exercise 3
+    //Print the numbers 1 through 50
+    //If the number is divisible by 7, you must skip the next number.
+    //If the number is divisible by 10 or 15, you must print “Donkey!”.
+    //If the number is not divisible by 2 and the previous number is divisible by 10, you must print “Monkey!”.
+
+
+    // for (var i = 1; i <= 50; i++) {
+    //   if (i % 7 === 0) {
+    //     continue;
+    //   } else if (i % 10 === 0 || i % 15 === 0) {
+    //     console.log("Donkey");
+    //   } else if (i % 2 !== 0) {
+    //     console.log(i + 'pas par 2')
+    //     if (i-1 % 10 == 0) {
+    //       console.log("Monkey")
+    //     }
+    //   } else {
+    //     console.log(i);
+    //   }
+    // }
+
+
+    // var animalArray = ["Dog", "Cat", "Fish"];
+    // console.log("Original: " + animalArray);
+
+    // animalArray[6] = "Turtle";
+    // console.log("Adding some element: " + animalArray);
+
+    // animalArray[2] = "Snake";
+    // console.log("Updating some element: " + animalArray);
+
+    // var animalArray = ["Dog", "Cat", "Fish"];
+    // console.log(animalArray);
+
+    // animalArray.unshift("Whale");
+    // console.log(animalArray);
+
+
+
+
+
+    // ARRAY - Exercice 1 
+
+    var animalArray = ["Dog", "Cat", "Fish", "Lizard", "Whale", "Cheetah"];
+    console.log("Original: " + animalArray);
+    console.log("------");
+
+    //Add two of your favorite animals to the end of the array.
+
+    animalArray.push("Frog", "Hedgehog");
+    console.log(animalArray);
+
+    //Remove the first two elements of the array.
+
+    animalArray.splice(0, 2);
+    console.log(animalArray);
+
+    //Replace the last element in the array with the word “last”.
+    var lastIndex = animalArray.length - 1
+    console.log(lastIndex);
+    animalArray.splice(lastIndex, 1, "last");
+    console.log(animalArray);
+
+    // Iteration test
+    console.log("------");
+
+    // var animalArray = ["Dog", "Cat", "Fish"];
+
+    // for (var i = 0; i < animalArray.length; i++) {
+    //   console.log(animalArray[i]);
+    // }
+
+    // var counter = 0;
+    // var animalArray = ["Dog", "Cat", "Fish"];
+
+    // while (counter < animalArray.length) {
+    //   console.log(animalArray[counter]);
+    //   counter++;
+    // }
+
+
+    // var animalArray = ["Dog", "Cat", "Fish"];
+
+    // animalArray.forEach(function (animal) {
+    //   console.log(animal);
+    // });
+
+    // ARRAY - FOREACH Exercise 
+    //Create an array with 6 of your favorite foods.
+    //With the loop of your choice, iterate through the array, but only print out the foods with an even index.
+
+    // var foodArray = ["Pasta", "Ramen", "Tajine", "Vegetable Soup", "Sushi", "Bimbimbap"];
+    // console.log(foodArray);
+
+    // foodArray.forEach(function (food, index) {
+    //   if (index % 2 !== 0) {
+    //     console.log(food);
+    //   }
+    // });
+
+
+    // ARRAY - Common Array Operations
+
+    // var i
+    // var sum = 0;
+    // var numbers = [2, 3, 6, 1, 7, 10];
+    // for (i = 0; i < numbers.length; i++) {
+    //   sum += numbers[i];
+    // }
+
+    // Log the sum
+    // console.log(sum);
+
+    // ARRAY - Average the Numbers
+
+    var sum = 0;
+    var numbers = [1, 7, 4, 11, 16, 10];
+    var i;
+
+    for (i = 0; i < numbers.length; i++) {
+      sum += numbers[i];
+    }
+
+    console.log(sum);
+    var elements = numbers.length;
+
+    var average = sum / elements;
+    console.log(average);
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
